@@ -1,10 +1,10 @@
 <form action="/users" method="post" accept-charset="UTF-8">
   <label for="name">Username:</label>
-  <input type="text" id="name" name="name"><br><br>
+  <input type="text" id="name" name="user[username]"><br><br>
   <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
+  <input type="email" id="email" name="user[email]"><br><br>
   <label for="password">Password:</label>
-  <input type="password" id="password" name="password"><br><br>
+  <input type="password" id="password" name="user[password]"><br><br>
   <input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
   <input type="submit" value="Submit">
 </form>
