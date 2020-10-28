@@ -35,9 +35,9 @@
 <%# Form_for %>
 
 <%= form_for @user do |f| %>
-  name: <%= f.text_field :username, placeholder: 'name'%><br /><br />
-  email : <%= f.text_field :email, placeholder: 'email' %><br /><br />
-  password : <%= f.text_field :password %><br /><br />
+  name: <%= f.text_field :username, placeholder: 'name'%>
+  email : <%= f.text_field :email, placeholder: 'email' %>
+  password : <%= f.text_field :password %>
   <%= f.submit %>
 <% end %>
 
