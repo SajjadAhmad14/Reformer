@@ -19,10 +19,14 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      redirect_to edit_users_path
+      redirect_to @user
     else
       render :edit
     end
+  end
+
+  def index
+    @users = User.all
   end
 
   private
