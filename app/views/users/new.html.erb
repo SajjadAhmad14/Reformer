@@ -1,5 +1,9 @@
+<%# Regular Form %>
+
+<!--
 <form action="/users" method="post" accept-charset="UTF-8">
   <label for="name">Username:</label>
+
   <input type="text" id="name" name="user[username]"><br><br>
   <label for="email">Email:</label>
   <input type="email" id="email" name="user[email]"><br><br>
@@ -8,3 +12,32 @@
   <input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
   <input type="submit" value="Submit">
 </form>
+-->
+
+
+<%# Form_tag %>
+
+<!--
+<%= form_tag("/users", method: "post") do %>
+  <%= label_tag(:name, "username") %> 
+  <%= text_field_tag('user[username]') %> <br><br>
+
+  <%= label_tag(:email,"email") %>
+  <%= text_field_tag('user[email]') %> <br><br>
+
+  <%= label_tag(:password, "password") %>
+  <%= text_field_tag("user[password]") %> <br><br>
+
+  <%= submit_tag("Submit") %>
+<% end %>
+-->
+
+<%# Form_for %>
+
+<%= form_for @user do |f| %>
+  name: <%= f.text_field :username, placeholder: 'name'%><br /><br />
+  email : <%= f.text_field :email %><br /><br />
+  password : <%= f.text_field :password %><br /><br />
+  <%= f.submit %>
+<% end %>  
+
