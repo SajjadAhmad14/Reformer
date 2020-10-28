@@ -2,27 +2,31 @@
 
 This project is to practice different ways to create a form in rails
 
+- Form can be used to add a new user
+- User has username, email and password
+- User can be edited
+- Error messages are shown if user can not be updated
 
 ## Built With
 
-- Ruby on Rails,
+- Ruby on Rails
+- Sqlite 3
 - VS Code
 - Google developer tools
 - Git and GitHub
-- Sqlite 3
 - A lot of love
 
 
 # How To Run It Locally?
 
 
-## You must have Ruby and Ruby on Rails installed on you system in order to run this  project locally.
+## You must have Ruby and Ruby on Rails installed on your system in order to run this  project locally.
 
 **Step 1**<br>
 Clone the repo in your local folder where you want to run it<br>
 `git@github.com:SajjadAhmad14/Reformer.git`.<br>
 **Step 2**<br>
-Run 'cd reddit'<br>
+Run 'cd Reformer'<br>
 **Step 3**<br>
 Run 'rails server'<br>
 **Step 4**<br>
@@ -31,7 +35,7 @@ Run 'rails db:migrate'
 
 ## Authors
 
-Feel free to reach out. I'm always happy to connect :slightly_smiling_face:
+Feel free to reach us. We're always happy to connect :slightly_smiling_face:
 
 👤 **Mkrtich Sargsyan**
 
@@ -54,9 +58,13 @@ Feel free to reach out. I'm always happy to connect :slightly_smiling_face:
 
 ## 🤝 Contributing
 
+- If you want to contribute or have a feature to add.
+- Go to the repo
+- Open a pull request
+
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the <a href="https://github.com/RICKCOYL/embeded-images-and-videos/issues"> issues page</a>.
+Feel free to check the [issues page](https://github.com/SajjadAhmad14/Reformer/issues)
 
 ## Show your support
 
@@ -64,8 +72,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a> 
+- <a href="https://www.microverse.org/" target="_blank">Microverse</a>
+- <a href="https://www.w3schools.com/" target="_blank">w3schools</a> 
 - <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
 - <a href="https://www.stackoverflow.com/" target="_blank">Stackoverflow</a>
-- <a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a>
-- <a href="https://youtube.com/" target="_blank">YouTube player page</a>
