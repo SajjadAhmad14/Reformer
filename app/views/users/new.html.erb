@@ -1,7 +1,6 @@
 <%# Regular Form %>
-
 <!--
-<form action="/users" method="post" accept-charset="UTF-8">
+<form action="users_path" method="post" accept-charset="UTF-8">
   <label for="name">Username:</label>
 
   <input type="text" id="name" name="user[username]"><br><br>
@@ -13,12 +12,9 @@
   <input type="submit" value="Submit">
 </form>
 -->
-
-
 <%# Form_tag %>
-
 <!--
-<%= form_tag("/users", method: "post") do %>
+<%= form_tag("users_path", method: "post") do %>
   <%= label_tag(:name, "username") %> 
   <%= text_field_tag('user[username]') %> <br><br>
 
@@ -26,20 +22,15 @@
   <%= text_field_tag('user[email]') %> <br><br>
 
   <%= label_tag(:password, "password") %>
-  <%= text_field_tag("user[password]") %> <br><br>
+  <%= password_field_tag("user[password]") %> <br><br>
 
   <%= submit_tag("Submit") %>
 <% end %>
 -->
-
 <%# Form_for %>
-
 <%= form_for @user do |f| %>
-  name: <%= f.text_field :username, placeholder: 'name'%>
-  email : <%= f.text_field :email, placeholder: 'email' %>
-  password : <%= f.text_field :password %>
+  name: <%= f.text_field :username, placeholder: 'name'%><br>
+  email : <%= f.text_field :email, placeholder: 'email' %><br>
+  password : <%= f.password_field :password %><br>
   <%= f.submit %>
 <% end %>
-
-
-
